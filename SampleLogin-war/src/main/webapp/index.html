@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/home/home.css">
+<link rel="stylesheet" href="css/popup/snackbar.css">
+<link rel="stylesheet" href="css/popup/modal.css">
+</head>
+<body>
+
+<!-- The Modal -->
+<div id="login-form" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="login-close">&times;</span>
+    <h3>Welcome back</h3>
+          <!-- Modal body -->
+    <div class="modal-body">
+        <input type="text" id="username" placeholder="Username..">
+		<input type="password" id="password" placeholder="Password..">
+   </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="login_button" onClick="userLogin()">Login</button>
+      </div>
+  </div>
+</div>
+<!-- The Modal -->
+<div id="register-form" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="register-close">&times;</span>
+    <p>Enter details below</p>
+          <!-- Modal body -->
+    <div class="modal-body long-form">
+		
+		Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" id="new_name" placeholder="John.."><br>
+		Surname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" id="new_surname" placeholder="Doe.."><br>
+		Date of Birth:
+		<input type="text" id="new_DOB" placeholder="10/01/2001"><br>
+		Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="email" id="new_email" placeholder="johndoe@.."><br>
+		Username:&nbsp;&nbsp;&nbsp;
+        <input type="text" id="new_username" placeholder="Username.."><br>
+		Password:&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="password" id="new_password" placeholder="Password..">
+   </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="login_button" onClick="userRegister()">Register</button>
+      </div>
+  </div>
+</div>
+<div style="text-align: center;">
+	<div class="main-body" style="display: inline-block;">
+		<button id="login"  style="height:50px;width:80px">Login</button>
+		<button id="reg" style="height:50px;width:100px">Create Account</button>
+		<button id="logout"  style="height:50px;width:80px">Logout</button>
+	</div>
+</div>
+<div id="snackbar"></div>
+<script src="javascript/popup/snackbar.js"></script>
+<script src="javascript/popup/modal.js"></script>
+<script src="javascript/network/server.js"></script>
+<script src="javascript/user/form/login.js"></script>
+<script src="javascript/user/cookie/cookie.js"></script>
+</html>
