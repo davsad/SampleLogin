@@ -2,7 +2,7 @@ This sample project demonstrates a login/register/logout functionality of a 3 ti
 
 Tech. included within project:
  1. Maven
- 2. HTML/CSS/JS/AJAX
+ 2. HTML/CSS/JS/AJAX/Cookies
  3. REST (jax-rs)
  4. JEE (EJB, JPA, CDI)
 
