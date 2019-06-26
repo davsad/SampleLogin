@@ -6,7 +6,7 @@ Tech. included within project:
  3. REST (jax-rs)
  4. JEE (EJB, JPA, CDI)
 
-Take note: Within this sample, maven modules are coupled together as there was a time restriction create this sample.
+Take note: Within this sample, maven modules are coupled together as there was a time restriction creating this sample , along with that some other things where left out, most note worthy cookies should be encrypted server side.
 
 Database used by our persistence is H2 so it recommended to change this accordingly.
 
@@ -18,3 +18,5 @@ Project structure:
  3. SampleLogin-jpa acts as the persistence layer/provider, contains jpa implementations.
  4. SampleLogin-war contains the html/css/js files (src/webapp/*) and also the REST implementation classes.
  5. SampleLogin-ear the ear file to encaplusate artifacts from previously mention modules
+
+Base url: http://localhost:8080/sample
