@@ -35,6 +35,6 @@ public class UserEJB implements IUserEJB {
 
 	@Override
 	public boolean validate(String username, String password) {
-		return userDao.validateUserByPassword(username, password) ? true : false;
+		return userDao.validateUserByPassword(username, password);
 	}
 }
